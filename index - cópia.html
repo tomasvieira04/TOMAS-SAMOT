@@ -16,19 +16,18 @@
       color: #FFFAF0;
       font-family: 'Abril Fatface', serif;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
       min-height: 100vh;
       margin: 0;
       padding: 40px;
-      text-align: center;
     }
 
     h1 {
       font-family: 'Climate Crisis', sans-serif;
       font-size: 2.5em;
       margin-bottom: 1em;
+      text-align: center;
     }
 
     h2 {
@@ -36,6 +35,7 @@
       margin-top: 1.5em;
       margin-bottom: 0.5em;
       text-decoration: underline;
+      text-align: center;
     }
 
     p {
@@ -43,22 +43,41 @@
       margin-bottom: 1.5em;
       max-width: 700px;
       text-align: justify;
-      margin-left: auto;
-      margin-right: auto;
       font-size: 0.95em;
     }
 
-    img {
-      max-width: 600px;
+    /* imagem logo abaixo do título */
+    .hero-img {
+      max-width: 700px;
+      width: 100%;
       height: auto;
       border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    /* galeria de 3 imagens */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* espaço entre as imagens */
       margin-top: 40px;
+      flex-wrap: wrap; /* para adaptar no mobile */
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover; /* faz ficar quadrado mas sem distorcer */
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
 
   <h1>TOMÁS / SAMOT</h1>
+
+  <!-- imagem logo abaixo do título -->
+  <img src="imagem1.jpg" alt="Imagem 1" class="hero-img">
 
   <h2>Biografia</h2>
   <p>
@@ -72,15 +91,20 @@
 
   <h2>Hobbies e Interesses</h2>
   <p>
-    Além de me perder no mundo do futebol no *Football Manager* e no zerozero, gosto de editar vídeos, fazer design e basicamente socializar com amigos e namorada. Um dia sem rir ou sair com eles é praticamente um crime contra mim próprio. Também vejo séries para me sentir menos perdido: *The Office*, *Better Call Saul*, *The White Lotus*, *The Boys*, *Dark* e *The Studio*. Se me virem rir sozinho, não se preocupem, é só mais uma lição de humildade.
+    Além de me perder no mundo do futebol no <em>Football Manager</em> e no zerozero, gosto de editar vídeos, fazer design e basicamente socializar com amigos e namorada. Um dia sem rir ou sair com eles é praticamente um crime contra mim próprio. Também vejo séries para me sentir menos perdido: <em>The Office</em>, <em>Better Call Saul</em>, <em>The White Lotus</em>, <em>The Boys</em>, <em>Dark</em> e <em>The Studio</em>. Se me virem rir sozinho, não se preocupem, é só mais uma lição de humildade.
   </p>
 
   <h2>Projetos</h2>
   <p>
-    Realizador de *Bruno Nuno* e *Fumar Mata*, e participei nos documentários *Why Stop Now* e *Jovens Adultos*. Os meus projetos são basicamente a minha maneira de provar que consigo meter caos e humor no mesmo saco e ainda parecer que sei o que estou a fazer. Spoiler: na maior parte das vezes, não sei.
+    Realizador de <em>Bruno Nuno</em> e <em>Fumar Mata</em>, e participei nos documentários <em>Why Stop Now</em> e <em>Jovens Adultos</em>. Os meus projetos são basicamente a minha maneira de provar que consigo meter caos e humor no mesmo saco e ainda parecer que sei o que estou a fazer. Spoiler: na maior parte das vezes, não sei.
   </p>
 
-  <img src="iqos.JPG" alt="Samot / Tomás">
+  <!-- galeria com 3 imagens no fim -->
+  <div class="gallery">
+    <img src="imagem2.jpg" alt="Imagem 2">
+    <img src="imagem3.jpg" alt="Imagem 3">
+    <img src="imagem4.jpg" alt="Imagem 4">
+  </div>
 
 </body>
 </html>
